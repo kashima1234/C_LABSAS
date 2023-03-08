@@ -1,0 +1,3 @@
+Enter first natural number:
+Enter second natural number:
+The greatest common factor = 21

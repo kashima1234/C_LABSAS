@@ -1,0 +1,3 @@
+Enter the cordinates of the first point on the line:
+Enter the coordinates of the second point on the line:
+Error!

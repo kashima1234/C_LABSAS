@@ -1,0 +1,2 @@
+Enter thre-digit number:
+Result = 60

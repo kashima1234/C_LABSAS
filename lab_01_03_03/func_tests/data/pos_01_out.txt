@@ -1,0 +1,4 @@
+Ente value for initial speed:
+Enter value for acceleration:
+Enter value for time:
+S = 400.000000
