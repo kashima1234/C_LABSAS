@@ -1,0 +1,2 @@
+Enter element array:
+Error: array not initialized
