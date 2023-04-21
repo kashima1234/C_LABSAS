@@ -11,7 +11,7 @@
 int input_matrix_param(size_t *x)
 {
     int rc = scanf("%zu", x);
-    if ((rc != INCORRECT_INPT_PAPAM) || (*x <= 0) ||(*x > 10))
+    if ((rc != INCORRECT_INPT_PAPAM) || (*x <= 0) || (*x > 10))
     {
         printf("Error: incorrect input\n");
         return INCORRECT_INPT_PAPAM;
@@ -24,7 +24,7 @@ int input_matrix(int matrix[][M], size_t n, size_t m)
     printf("Enter elements:\n");
     for (size_t i = 0; i < n; i++)
     {
-      for (size_t j = 0; j < m; j++)
+        for (size_t j = 0; j < m; j++)
         {
             if (scanf("%d", &matrix[i][j]) != NUM_OF_ARG)
             {
@@ -47,7 +47,7 @@ int set_input(int matrix[][M], size_t *n, size_t *m)
     printf("Enter m: ");
     error = input_matrix_param(m);
     if (error != EXIT_SUCCESS)
-        return  error;
+        return error;
 
     error = input_matrix(matrix, *n, *m);
     if (error != EXIT_SUCCESS)
@@ -90,7 +90,6 @@ int set_sort(int matrix[][M], size_t a, size_t b)
             set_swap(matrix, b, i, min);
     }
     return EXIT_SUCCESS;
-
 }
 
 void set_printable(int matrix[][M], size_t n, size_t m)
@@ -98,14 +97,12 @@ void set_printable(int matrix[][M], size_t n, size_t m)
     printf("input matrix:\n");
     for (size_t i = 0; i < n; i++)
     {
-        for(size_t j = 0; j < m; j++)
-            printf("%d " , matrix[i][j]);
+        for (size_t j = 0; j < m; j++)
+            printf("%d ", matrix[i][j]);
         printf("\n");
     }
     printf("\n");
-   
 }
-
 
 int main()
 {
@@ -119,5 +116,4 @@ int main()
 
     set_sort(matrix, n, m);
     set_printable(matrix, n, m);
-
 }
