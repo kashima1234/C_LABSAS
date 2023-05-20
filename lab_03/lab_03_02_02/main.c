@@ -9,7 +9,7 @@
 #define M 10
 #define NO_ODD_SUM 3
 #define NO_STRING_MATRIX 3
-
+#define MM 10
 
 int input_matrix_param(size_t *x)
 {
@@ -123,28 +123,6 @@ void insert_if_successful(int matrix[][M], size_t *n, size_t m)
             i++;
         }
 }
-
-
-// void insert_row_if_successful(int matrix[][M], size_t *n, size_t m)
-// {
-//     for (size_t i = 0; i < *n; i++)
-//     {
-//         int rc = is_string_matrix(matrix[i], m);
-//         if (rc == SUCCESS)
-//         {
-//             size_t end = *n;
-//             while (end > i)
-//             {
-//                 set_row(matrix[end], matrix[end - 1], m);
-//                 end--;
-//             }
-//             set_row(matrix[i], m);
-//             (*n)++;
-//             i++;            
-//         }
-//     }
-// }
-
 
 int main()
 {
